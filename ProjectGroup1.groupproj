@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{8EAEDDB6-05B4-4701-B6DA-F60118FF9276}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ConfigServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="AikaServer.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ConfigServer">
+        <MSBuild Projects="ConfigServer.dproj"/>
+    </Target>
+    <Target Name="ConfigServer:Clean">
+        <MSBuild Projects="ConfigServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ConfigServer:Make">
+        <MSBuild Projects="ConfigServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AikaServer">
+        <MSBuild Projects="AikaServer.dproj"/>
+    </Target>
+    <Target Name="AikaServer:Clean">
+        <MSBuild Projects="AikaServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AikaServer:Make">
+        <MSBuild Projects="AikaServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ConfigServer;AikaServer"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ConfigServer:Clean;AikaServer:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ConfigServer:Make;AikaServer:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

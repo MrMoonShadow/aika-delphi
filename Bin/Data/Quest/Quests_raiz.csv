@@ -1,0 +1,6 @@
+//npcid,questid,questtype,questmark,reward1,reward2,reward3,reward4,reward5,reward6,req1,req2,req3,req4,req5,rtype1,rtype2,rtype3,rtype4,rtype5,deleteitem1,deleteitem2,deleteitem3,deleteamount1,deleteamount2,deleteamount3,gold,exp,levelmin
+2048,14,2,8,5300,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100000,10
+2048,147,2,8,5300,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,100000,20
+2072,39,21,9,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7
+2072,40,21,9,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7
+2072,40,21,9,100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,7

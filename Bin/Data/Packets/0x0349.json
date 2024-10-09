@@ -1,0 +1,1 @@
+{"name":"0x0349","dataType":"PACKET","dataSize":0,"structFields":[{"name":"Header","byteStart":0,"byteEnd":11,"dataType":"TPacketHeader","dataSize":12,"isArray":false,"arraySize":0,"isCustomStruct":true}]}

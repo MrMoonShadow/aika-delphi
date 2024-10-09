@@ -1,0 +1,67 @@
+{
+    "name": "TPacketHeader",
+    "dataType": "TYPE",
+    "dataSize": 12,
+    "structFields": [
+        {
+            "name": "Size",
+            "byteStart": 0,
+            "byteEnd": 1,
+            "dataType": "word",
+            "dataSize": 2,
+            "isArray": false,
+            "arraySize": 0,
+            "isCustomStruct": false
+        },
+        {
+            "name": "Key",
+            "byteStart": 2,
+            "byteEnd": 2,
+            "dataType": "byte",
+            "dataSize": 1,
+            "isArray": false,
+            "arraySize": 0,
+            "isCustomStruct": false
+        },
+        {
+            "name": "ChkSum",
+            "byteStart": 3,
+            "byteEnd": 3,
+            "dataType": "byte",
+            "dataSize": 1,
+            "isArray": false,
+            "arraySize": 0,
+            "isCustomStruct": false
+        },
+        {
+            "name": "Index",
+            "byteStart": 4,
+            "byteEnd": 5,
+            "dataType": "word",
+            "dataSize": 2,
+            "isArray": false,
+            "arraySize": 0,
+            "isCustomStruct": false
+        },
+        {
+            "name": "Code",
+            "byteStart": 6,
+            "byteEnd": 7,
+            "dataType": "word",
+            "dataSize": 2,
+            "isArray": false,
+            "arraySize": 0,
+            "isCustomStruct": false
+        },
+        {
+            "name": "Time",
+            "byteStart": 8,
+            "byteEnd": 11,
+            "dataType": "dword",
+            "dataSize": 4,
+            "isArray": false,
+            "arraySize": 0,
+            "isCustomStruct": false
+        }
+    ]
+}
